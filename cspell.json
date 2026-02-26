@@ -1,0 +1,29 @@
+{
+    "import": ["@cspell/dict-lorem-ipsum/cspell-ext.json"],
+    "caseSensitive": false,
+    "dictionaries": ["custom-words"],
+    "dictionaryDefinitions": [
+        {
+            "name": "custom-words",
+            "path": "./.cspell/custom-words.txt",
+            "addWords": true
+        }
+    ],
+    "files": [
+        "packages/**/*.{html,js,cjs,mjs,ts,tsx,css,scss,md,vue}",
+        "apps/**/*.{html,js,cjs,mjs,ts,tsx,css,scss,md,vue}",
+        "*.{json,md}"
+    ],
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/lib/**",
+        "**/.vitepress/**",
+        "**/docs/**",
+        "**/stats.html",
+        "**/language/**",
+        "**/language.ts",
+        "**/package.json",
+        "eslint.config.js"
+    ]
+}
