@@ -1,0 +1,46 @@
+{
+    // 主要是工程根目录下的配置是给 vscode 编辑器看的
+    // Visit https://aka.ms/tsconfig to read more about this file
+    "compilerOptions": {
+        // File Layout
+        // "rootDir": "./src",
+        // "outDir": "./dist",
+
+        // Environment Settings
+        // See also https://aka.ms/tsconfig/module
+        "module": "nodenext",
+        "target": "esnext",
+        "types": [],
+        // For nodejs:
+        // vue可选
+        "lib": ["esnext", "DOM", "DOM.Iterable"],
+        // 在ts文件中禁止导入js文件
+        "allowJs": false,
+        // "types": ["node"],
+        // and npm install -D @types/node
+
+        // Other Outputs
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+
+        // Stricter Typechecking Options
+        "noUncheckedIndexedAccess": true,
+        "exactOptionalPropertyTypes": true,
+
+        // Style Options
+        // "noImplicitReturns": true,
+        // "noImplicitOverride": true,
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        // "noFallthroughCasesInSwitch": true,
+        // "noPropertyAccessFromIndexSignature": true,
+
+        // Recommended Options
+        "strict": true,
+        "isolatedModules": true,
+        "noUncheckedSideEffectImports": true,
+        "moduleDetection": "force",
+        "skipLibCheck": true
+    }
+}
