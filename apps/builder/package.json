@@ -18,7 +18,15 @@
         "pinia": "3.0.4",
         "@icon-park/vue-next": "1.4.2",
         "nanoid": "5.1.6",
-        "smooth-dnd": "0.12.1"
+        "smooth-dnd": "0.12.1",
+        "@tiptap/core": "3.20.0",
+        "@tiptap/starter-kit": "3.20.0",
+        "@tiptap/vue-3": "3.20.0",
+        "@tiptap/pm": "3.20.0",
+        "echarts": "6.0.0",
+        "vue-echarts": "8.0.1",
+        "zrender": "6.0.0",
+        "d3": "7.9.0"
     },
     "devDependencies": {
         "vite": "7.3.1",

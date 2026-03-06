@@ -7,7 +7,7 @@ export const blocks: BlockInfo[] = [
         label: '标题',
         props: {
             align: 'left',
-            content: '妙码学院——让进取的人更具职业价值'
+            content: '职业价值'
         }
     },
     {

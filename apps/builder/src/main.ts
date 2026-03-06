@@ -5,10 +5,12 @@ import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 
 import App from './App.vue'
+import { initBlocks } from './blocks'
 import { router } from './router'
 
 const pinia = createPinia()
 const app = createApp(App)
 app.use(router)
 app.use(pinia)
+app.use(initBlocks()) // 插件化机制注册到全局
 app.mount('#app')
