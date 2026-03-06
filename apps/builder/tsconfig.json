@@ -1,5 +1,4 @@
 {
-    // 主要是工程根目录下的配置是给 vscode 编辑器看的
     // Visit https://aka.ms/tsconfig to read more about this file
     "compilerOptions": {
         // File Layout
@@ -8,20 +7,15 @@
 
         // Environment Settings
         // See also https://aka.ms/tsconfig/module
-        "module": "nodenext",
-        "target": "esnext",
+        "target": "ESNext",
         "types": [],
         // For nodejs:
-        // vue可选
-        "lib": ["esnext", "DOM", "DOM.Iterable"],
-        // 在ts文件中禁止导入js文件
-        "allowJs": false,
+        // "lib": ["esnext"],
         // "types": ["node"],
         // and npm install -D @types/node
 
         // Other Outputs
         "sourceMap": true,
-        // 打包时：声明文件 产出
         "declaration": true,
         "declarationMap": true,
 
@@ -39,9 +33,20 @@
 
         // Recommended Options
         "strict": true,
+        "jsx": "react-jsx",
+        "verbatimModuleSyntax": true,
         "isolatedModules": true,
         "noUncheckedSideEffectImports": true,
         "moduleDetection": "force",
-        "skipLibCheck": true
-    }
+        "skipLibCheck": true,
+
+        //
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "moduleResolution": "bundler", // 关键：必须是 Node，否则 TS 解析别名逻辑异常
+        "module": "ESNext" // 和 package.json 的 type: module 匹配
+    },
+    "include": ["env.d.ts", "src/**/*", "src/**/*.vue"]
 }

@@ -16,6 +16,6 @@ export default {
         'no-empty-source': true,
         // 关闭空行规则（按需）
         'declaration-empty-line-before': null,
-        'unit-allowed-list': ['px']
+        // 'unit-allowed-list': ['px']
     }
 }
