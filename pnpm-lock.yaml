@@ -95,6 +95,9 @@ importers:
       '@tiptap/vue-3':
         specifier: 3.20.0
         version: 3.20.0(@floating-ui/dom@1.7.6)(@tiptap/core@3.20.0(@tiptap/pm@3.20.0))(@tiptap/pm@3.20.0)(vue@3.5.29(typescript@5.9.3))
+      copy-text-to-clipboard:
+        specifier: 3.2.0
+        version: 3.2.0
       d3:
         specifier: 7.9.0
         version: 7.9.0
@@ -110,12 +113,18 @@ importers:
       smooth-dnd:
         specifier: 0.12.1
         version: 0.12.1
+      vee-validate:
+        specifier: 4.13.2
+        version: 4.13.2(vue@3.5.29(typescript@5.9.3))
       vue:
         specifier: 3.5.29
         version: 3.5.29(typescript@5.9.3)
       vue-echarts:
         specifier: 8.0.1
         version: 8.0.1(echarts@6.0.0)(vue@3.5.29(typescript@5.9.3))
+      vue-json-pretty:
+        specifier: 2.4.0
+        version: 2.4.0(vue@3.5.29(typescript@5.9.3))
       vue-router:
         specifier: 5.0.3
         version: 5.0.3(@vue/compiler-sfc@3.5.29)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3))
@@ -1154,6 +1163,9 @@ packages:
   '@vue/compiler-ssr@3.5.29':
     resolution: {integrity: sha512-Y/ARJZE6fpjzL5GH/phJmsFwx3g6t2KmHKHx5q+MLl2kencADKIrhH5MLF6HHpRMmlRAYBRSvv347Mepf1zVNw==}
 
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+
   '@vue/devtools-api@7.7.9':
     resolution: {integrity: sha512-kIE8wvwlcZ6TJTbNeU2HQNtaxLx3a84aotTITUuL/4bzfPxzajGBOoqjMhwZJ8L9qFYDU/lAYMEEm11dnZOD6g==}
 
@@ -1440,6 +1452,10 @@ packages:
   copy-anything@4.0.5:
     resolution: {integrity: sha512-7Vv6asjS4gMOuILabD3l739tsaxFQmC+a7pLZm02zyvs8p977bL3zEgq3yDk5rn9B0PbYgIv++jmHcuUab4RhA==}
     engines: {node: '>=18'}
+
+  copy-text-to-clipboard@3.2.0:
+    resolution: {integrity: sha512-RnJFp1XR/LOBDckxTib5Qjr/PMfkatD0MUCQgdpqS8MdKiNUzBjAQBEN6oUy+jW7LI93BBG3DtMB2KOOKpGs2Q==}
+    engines: {node: '>=12'}
 
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -2910,6 +2926,10 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
+  type-fest@4.41.0:
+    resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
+    engines: {node: '>=16'}
+
   typescript@5.9.3:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
@@ -2948,6 +2968,11 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  vee-validate@4.13.2:
+    resolution: {integrity: sha512-HlpR/6MJ92TW9f135umMZKUqdd/tFQTxLNSf2ImbU4Y/MlLVAUpF1l64VdjTOhbClAqPjCb5p/SqHDxLpUHXrw==}
+    peerDependencies:
+      vue: ^3.4.26
 
   vite@7.3.1:
     resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
@@ -3006,6 +3031,12 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+
+  vue-json-pretty@2.4.0:
+    resolution: {integrity: sha512-e9bP41DYYIc2tWaB6KuwqFJq5odZ8/GkE6vHQuGcbPn37kGk4a3n1RNw3ZYeDrl66NWXgTlOfS+M6NKkowmkWw==}
+    engines: {node: '>= 10.0.0', npm: '>= 5.0.0'}
+    peerDependencies:
+      vue: '>=3.0.0'
 
   vue-router@5.0.3:
     resolution: {integrity: sha512-nG1c7aAFac7NYj8Hluo68WyWfc41xkEjaR0ViLHCa3oDvTQ/nIuLJlXJX1NUPw/DXzx/8+OKMng045HHQKQKWw==}
@@ -4053,6 +4084,8 @@ snapshots:
       '@vue/compiler-dom': 3.5.29
       '@vue/shared': 3.5.29
 
+  '@vue/devtools-api@6.6.4': {}
+
   '@vue/devtools-api@7.7.9':
     dependencies:
       '@vue/devtools-kit': 7.7.9
@@ -4361,6 +4394,8 @@ snapshots:
   copy-anything@4.0.5:
     dependencies:
       is-what: 5.5.0
+
+  copy-text-to-clipboard@3.2.0: {}
 
   core-util-is@1.0.3: {}
 
@@ -5934,6 +5969,8 @@ snapshots:
 
   type-fest@0.21.3: {}
 
+  type-fest@4.41.0: {}
+
   typescript@5.9.3: {}
 
   uc.micro@2.1.0: {}
@@ -5964,6 +6001,12 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  vee-validate@4.13.2(vue@3.5.29(typescript@5.9.3)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      type-fest: 4.41.0
+      vue: 3.5.29(typescript@5.9.3)
 
   vite@7.3.1(@types/node@25.3.1)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
@@ -5999,6 +6042,10 @@ snapshots:
       semver: 7.7.4
     transitivePeerDependencies:
       - supports-color
+
+  vue-json-pretty@2.4.0(vue@3.5.29(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.29(typescript@5.9.3)
 
   vue-router@5.0.3(@vue/compiler-sfc@3.5.29)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.29(typescript@5.9.3)))(vue@3.5.29(typescript@5.9.3)):
     dependencies:
